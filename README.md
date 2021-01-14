@@ -27,6 +27,7 @@ Wires * 15</br>
 ## Technologies implementation
 **Sight-Reader**
 * Step 1
+Get your hands on the sounds coming from the user’s microphone. 
 ```python
 $ navigator.getUserMedia(
   // details about the 'user media' that we want access to
