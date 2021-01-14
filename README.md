@@ -11,7 +11,7 @@ page automatically by sensing where the paragraph of music is
 playing.</br> 
  This is device will pick out the 「dominant frequency 」of the
 audio when we play the chords.
-##Compoents
+## Compoents
 Raspberry Pi 3 Model B * 1</br>
 Server Motor * 1</br>
 N20 Motor * 1</br>
