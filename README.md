@@ -3,7 +3,7 @@ auto-turner
 ## Set up your Raspberry Pi
 * Make sure you have set up your Raspberry Pi. If not, you can follow the "Set_up.pdf" above to get ready to use.
 ## Overview
-  A lot of people like to play guitar, violin and piano in their free
+ - A lot of people like to play guitar, violin and piano in their free
 time. However, when we learn to play the instruments, it takes time to
 turn the sheet music page from page.</br> 
   As a result, I want to develop an IoT device which can turn the
