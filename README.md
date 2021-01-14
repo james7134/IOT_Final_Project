@@ -11,4 +11,5 @@ page automatically by sensing where the paragraph of music is
 playing.</br> 
  This is device will pick out the 「dominant frequency 」of the
 audio when we play the chords.
+##Compoents
 
