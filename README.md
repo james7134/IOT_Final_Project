@@ -16,4 +16,7 @@ Raspberry Pi 3 Model B * 1</br>
 Server Motor * 1</br>
 N20 Motor * 1</br>
 N20 Tire * 1</br>
-
+Battery 1.5v * 4 </br>
+Battery case * 1</br>
+Breadboard * 1</br>
+Wires * 15</br>
