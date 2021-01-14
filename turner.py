@@ -1,33 +1,3 @@
-def turner():
-    print("I'm turner!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
-# Import libraries
-import sys
 import RPi.GPIO as GPIO          
 import time
 
@@ -53,7 +23,7 @@ p.ChangeDutyCycle(100)
 
 while(1)
     time.sleep(2)
-    print(backward)
+
     GPIO.output(16,GPIO.HIGH)
     GPIO.output(18,GPIO.LOW)
 
@@ -73,7 +43,4 @@ while(1)
 servo1.stop()
 GPIO.cleanup()
 
-print (Goodbye)
-
-"""
 
