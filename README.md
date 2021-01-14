@@ -43,3 +43,66 @@ $ navigator.getUserMedia(
   err => console.log(err)
 );
 ```
+
+* Step 2</br>
+-There is an "audio context" that is at the center of everything you do with the audio you’re working with.</br>
+-The audio contex that is source of audio would be the stream from the user’s mic.</br>
+-Then we connect a thing called an ‘analyser’ which would give us some data about the audio. 
+
+```python
+const audioContext = new window.AudioContext();
+const analyser = audioContext.createAnalyser();
+
+navigator.getUserMedia(
+  {audio: true},
+  stream => audioContext.createMediaStreamSource(stream).connect(analyser),
+  err => console.log(err)
+);
+```
+
+* Step 3</br>
+ Turn that rather abstract "stream" into an array of numbers.
+ ```python
+const audioContext = new window.AudioContext();
+const analyser = audioContext.createAnalyser();
+
+navigator.getUserMedia(
+  {audio: true},
+  stream => audioContext.createMediaStreamSource(stream).connect(analyser),
+  err => console.log(err)
+);
+
+const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+setTimeout(() => {
+  analyser.getByteTimeDomainData(dataArray);
+  console.log(dataArray);
+}, 300);
+```
+
+* Step 4</br>
+Loop through the array and spit it out onto a canvas.
+ ```python
+const audioContext = new window.AudioContext();
+const analyser = audioContext.createAnalyser();
+
+navigator.getUserMedia(
+  {audio: true},
+  stream => audioContext.createMediaStreamSource(stream).connect(analyser),
+  err => console.log(err)
+);
+
+const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+const canvasContext = refs.canvas.getContext('2d'); // a canvas I have in my HTML
+canvasContext.fillStyle = 'firebrick';
+
+setTimeout(() => {
+  analyser.getByteTimeDomainData(dataArray);
+
+  dataArray.forEach((item, i) => {
+    canvasContext.fillRect(i, item, 1, 1);
+  });
+}, 300);
+```
+
