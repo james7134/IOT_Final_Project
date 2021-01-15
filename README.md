@@ -606,7 +606,7 @@ if __name__=="__main__":
 
 ```
 * Step  4</br>
-- Open your terminal and</br>
+-Open your terminal and</br>
 `
 $ python PiCameraApp.py
 `
