@@ -611,7 +611,10 @@ if __name__=="__main__":
 $ python PiCameraApp.py
 `
 </br>
--
+-Turn your Picamrea to the console of the web-api</br>
+![image]()
+
+
 ## References</br>
 * https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
 * https://www.youtube.com/watch?v=wkZW9Hgrnao&ab_channel=ExplainingComputers</br>
