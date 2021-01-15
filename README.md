@@ -440,15 +440,15 @@ Beacuse the speed of Raspberry Pi is too slow, i choose to use my computer as a 
 * Step 1</br>
 Set up the dependencies</br>
 
-1. Install Tensorflow
+1. Install Tensorflow</br>
 `
 pip install tensorflow
 `
-2. Install keras
+</br>2. Install keras</br>
 `
 pip install keras 
 `
-<br>3. Install Open-CV 3.3</br>
+</br>3. Install Open-CV 3.3</br>
 Here is a good tutorial for installing Open-Cv</br>
 https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
 </br>4. Install the picamera with Numpy optimizations.
