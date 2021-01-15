@@ -219,7 +219,7 @@ class SmartArray {
 }
 ```
 
-* Step 7/br>
+* Step 7</br>
 Draw a piano
 
 ```python
