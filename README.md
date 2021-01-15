@@ -557,10 +557,10 @@ def ImagePreProcess(im_orig):
   
         #determine where to turn the page
 	if ans == key_position &&  time_point == time_position:
-        tu()
+       		 tu()
         else
-    ans++
-    time_position++
+   		 ans++
+    		 time_position++
     
 def main():
 	# loop over the frames from the video stream
