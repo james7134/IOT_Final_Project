@@ -335,3 +335,6 @@ const renderKey = key => {
   pressedKeyEl.classList.add('piano-key--lit');
 };
 ```
+**Page-turner**
+* Step 1</br>
+The 
