@@ -335,6 +335,27 @@ const renderKey = key => {
   pressedKeyEl.classList.add('piano-key--lit');
 };
 ```
+* Step 9</br>
+For using this Reader-</br>
+1.open the terminal</br>
+2.cd to the pageage of this reader</br>
+`
+$ cd C:\Users\MSI\Desktop\iot\sight-reader-master
+`
+</br>3.
+`
+$ npm install
+`
+</br>4.
+`
+$ npm run-script build
+`
+</br>5.
+`
+$ node index
+`
+</br>6.Go to the http://localhost:8080 with your browser</br>
+
 **Page-turner**
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051992.jpg?raw=true)
 </br>
