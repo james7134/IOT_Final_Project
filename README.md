@@ -431,3 +431,5 @@ while(1)
 servo1.stop()
 GPIO.cleanup()
 ```
+
+![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/Hnet-image.gif?raw=true)
