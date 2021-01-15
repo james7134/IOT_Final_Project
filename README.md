@@ -109,7 +109,7 @@ setTimeout(() => {
 * Step 5</br>
 1.The Web Audio API is recording at 44.1 kHz.</br>
 2.The pitch of a note is defined by how many waves there are in one second.</br>
-3.Whwn 87 whatevers long. There are 44,100 whatevers in a second. Which means there would be 507 of these wobbles in one   second (44100 / 87). In other words, the pitch of this sound is 507 Hz. </br>
+3.If 87 whatevers long. There are 44,100 whatevers in a second. Which means there would be 507 of these wobbles in one   second (44100 / 87). In other words, the pitch of this sound is 507 Hz. </br>
 
 ```python
 
@@ -433,6 +433,32 @@ GPIO.cleanup()
 ```
 
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/Hnet-image.gif?raw=true)
+
+**key-reader**</br>
+Beacuse the speed of Raspberry Pi is too slow, i choose to use my computer as a sensor for listening the audio. In additon to this, i didn't find out the way to let the web-api to set the result to Raspberry Pi. As a result, i use Picamera to caught the result of web-api on computer and make pi turn the page. </br>
+
+* Step 1</br>
+Set up the dependencies</br>
+
+1. Install Tensorflow</br>
+`
+pip install tensorflow
+`
+<br>
+2. Install keras</br>
+`
+pip install keras 
+`
+<br>
+3. Install Open-CV 3.3</br>
+Here is a good tutorial for installing Open-Cv</br>
+https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
+<br>
+4. Install the picamera with Numpy optimizations.
+`
+pip install "picamera[array]"
+`
+</br>
 
 ## Set up your Raspberry Pi</br>
 * https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
