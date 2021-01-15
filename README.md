@@ -605,9 +605,17 @@ if __name__=="__main__":
 	main()
 
 ```
-## Set up your Raspberry Pi</br>
+* Step  4</br>
+- Open your terminal and</br>
+`
+$ python PiCameraApp.py
+`
+</br>
+-
+## References</br>
 * https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
 * https://www.youtube.com/watch?v=wkZW9Hgrnao&ab_channel=ExplainingComputers</br>
 * https://www.youtube.com/watch?v=2bganVdLg5Q&ab_channel=MakerTutor</br>
 * https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode</br>
 * https://developer.mozilla.org/en-US/docs/Web/API/Streams_API<br>
+* https://www.hackster.io/dhq/ai-digit-recognition-with-picamera-2c017f#toc-program-explanation-5</br>
