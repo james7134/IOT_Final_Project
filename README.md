@@ -339,5 +339,16 @@ const renderKey = key => {
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051992.jpg?raw=true)
 </br>
 * Step 1</br>
-Set up the page turner
-
+Set up the page turner</br>
+- L298N Driver</br>
+1.The left-blue wire connnect to the N20 Motor +</br>
+2.The left-white wire connnect to the N20 Motor -</br>
+3.The green wire connect to the power supply +</br>
+4.The yellow wire connect to the power supply -</br>
+5.The purple wire connect to the Ground on the pi</br>
+6.The red wire connect to the 5v Power on the pi</br>
+7.The gray wire connect to the pin 16</br>
+8.The right-blue wire connect to the pin 18</br>
+9.The right-white wire connect to the pin 22</br>
+![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051996.jpg?raw=true)
+</br>
