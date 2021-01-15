@@ -612,8 +612,8 @@ $ python PiCameraApp.py
 `
 </br>
 -Turn your Picamrea to the console of the web-api</br>
+
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/Hnet-image%20(1).gif?raw=true)
-</br>
 
 ## References</br>
 * https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
