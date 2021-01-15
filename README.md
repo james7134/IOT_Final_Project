@@ -612,7 +612,7 @@ $ python PiCameraApp.py
 `
 </br>
 -Turn your Picamrea to the console of the web-api</br>
-![image]()
+![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/picamera.gif?raw=true)
 
 
 ## References</br>
