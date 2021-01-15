@@ -451,12 +451,34 @@ pip install keras
 </br>3. Install Open-CV 3.3</br>
 Here is a good tutorial for installing Open-Cv</br>
 https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
-</br>4. Install the picamera with Numpy optimizations.
+</br>4. Install the picamera with Numpy optimizations.</br>
 `
 pip install "picamera[array]"
 `
 </br>
 
+* Step 2</br>
+Algorithm Steps</br>
+1. Read the image</br>
+First step is to obviously put an image before the camera. This will be scaled later since the CNN (convolutional neural network) expect images of a certain size.</br>
+
+2.Convert to gray scale</br>
+The acquired image is then converted to gray-scale by using the scipy function call. Coincidentally you can only use opencv for the image manipulations but you have to remember all the function names. Also another point , there are some very subtle differences between scipy and open-cv when it comes to certain functions.</br>
+
+3. Scale image range</br>
+Here the image is converted from a floating point format to a uint8 range [0, 255]</br>
+
+4. Thresholding</br>
+To obtain a nice black and white image, thresholding is done via the Otsu method. This is the magic sauce step since doing thresholding manually will have one enter the values one by one.</br>
+
+5. Resize image</br>
+The image is resized to a 28 by 28 pixel array. This is then flattened to a linear array of size (28x28)</br>
+
+6. Invert image</br>
+MNIST DNN accepts images as 28x28 pixels, drawn as white on black background. So we have to invert the image.</br>
+
+7. Feed into trained neural network</br>
+This is the last step. Here we are loading the deep neural network weights and feed the image to the network. It takes 2-3 seconds to come up with a prediction.</br></br>
 ## Set up your Raspberry Pi</br>
 * https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
 * https://www.youtube.com/watch?v=wkZW9Hgrnao&ab_channel=ExplainingComputers</br>
