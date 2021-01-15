@@ -106,3 +106,64 @@ setTimeout(() => {
 }, 300);
 ```
 
+* Step 5</br>
+1.The Web Audio API is recording at 44.1 kHz.</br>
+2.The pitch of a note is defined by how many waves there are in one second.</br>
+3.Whwn 87 whatevers long. There are 44,100 whatevers in a second. Which means there would be 507 of these wobbles in one   second (44100 / 87). In other words, the pitch of this sound is 507 Hz. </br>
+
+```python
+
+const audioContext = new window.AudioContext();
+const analyser = audioContext.createAnalyser();
+const pitchSamples = [];
+let audioReady = false;
+
+navigator.getUserMedia(
+  {audio: true},
+  stream => {
+    audioContext.createMediaStreamSource(stream).connect(analyser);
+    audioReady = true;
+  },
+  err => console.log(err)
+);
+
+const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+const canvasContext = refs.canvas.getContext('2d');
+canvasContext.fillStyle = 'firebrick';
+
+const drawWave = () => { // this gets called via requestAnimationFrame, so runs roughly every 16ms
+  analyser.getByteTimeDomainData(dataArray);
+
+  let lastPos = 0;
+  dataArray.forEach((item, i) => {
+    if (item > 128 && lastItem <= 128) { // we have crossed below the mid point
+      const elapsedSteps = i - lastPos; // how far since the last time we did this
+      lastPos = i;
+
+      const hertz = 1 / (elapsedSteps / 44100);
+      pitchSamples.push(hertz); // an array of every pitch encountered
+    }
+
+    canvasContext.fillRect(i, item, 1, 1); // point in the wave
+
+    lastItem = item;
+  });
+};
+
+const renderAudio = () => {
+  requestAnimationFrame(renderAudio);
+
+  if (!audioReady) return;
+
+  canvasContext.clearRect(0, 0, 1024, 300);
+
+  drawWave();
+};
+
+renderAudio(); // kick the whole thing off
+
+setInterval(() => {
+  renderKey(pitchSamples); // defined elsewhere, will get the average pitch and render a key
+}, 250);
+```
