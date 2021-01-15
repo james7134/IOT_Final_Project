@@ -444,14 +444,14 @@ Set up the dependencies</br>
 `
 pip install tensorflow
 `
-<br>2. Install keras
+2. Install keras
 `
 pip install keras 
 `
 <br>3. Install Open-CV 3.3</br>
 Here is a good tutorial for installing Open-Cv</br>
 https://www.pyimagesearch.com/2019/09/16/install-opencv-4-on-raspberry-pi-4-and-raspbian-buster/
-<br>4. Install the picamera with Numpy optimizations.
+</br>4. Install the picamera with Numpy optimizations.
 `
 pip install "picamera[array]"
 `
