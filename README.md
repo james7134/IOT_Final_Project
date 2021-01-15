@@ -440,7 +440,7 @@ Beacuse the speed of Raspberry Pi is too slow, i choose to use my computer as a 
 * Step 1</br>
 Set up the dependencies</br>
 
-1. Install Tensorflow</br>
+</br>1. Install Tensorflow</br>
 `
 pip install tensorflow
 `
