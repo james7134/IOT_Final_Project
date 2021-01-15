@@ -16,7 +16,7 @@ audio when we play the chords.
 
 ## Compoents
 Raspberry Pi 3 Model B * 1</br>
-Server Motor * 1</br>
+Servo  Motor * 1</br>
 N20 Motor * 1</br>
 N20 Tire * 1</br>
 Battery 1.5v * 4 </br>
@@ -340,7 +340,7 @@ const renderKey = key => {
 </br>
 * Step 1</br>
 Set up the page turner</br>
-- L298N Driver</br>
+L298N Driver</br>
 1.The left-blue wire connnect to the N20 Motor +</br>
 2.The left-white wire connnect to the N20 Motor -</br>
 3.The green wire connect to the power supply +</br>
@@ -351,4 +351,12 @@ Set up the page turner</br>
 8.The right-blue wire connect to the pin 18</br>
 9.The right-white wire connect to the pin 22</br>
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051996.jpg?raw=true)
+</br>
+
+* Step 2</br>
+Set up Servo  motor
+1.The red wire connnect to 5v Power on the pi</br>
+2.The orange one connnect to pin 11</br>
+3.The brown one connnect to Ground</br>
+![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051993.jpg?raw=true)
 </br>
