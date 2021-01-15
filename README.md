@@ -461,7 +461,6 @@ pip install "picamera[array]"
 Algorithm Steps</br>
 1. Read the image</br>
 First step is to obviously put an image before the camera. This will be scaled later since the CNN (convolutional neural network) expect images of a certain size.</br>
-
 2.Convert to gray scale</br>
 The acquired image is then converted to gray-scale by using the scipy function call. Coincidentally you can only use opencv for the image manipulations but you have to remember all the function names. Also another point , there are some very subtle differences between scipy and open-cv when it comes to certain functions.</br>
 
