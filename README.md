@@ -336,5 +336,7 @@ const renderKey = key => {
 };
 ```
 **Page-turner**
+![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/S__52051992.jpg?raw=true)
 * Step 1</br>
-The 
+Set up the page turner
+
