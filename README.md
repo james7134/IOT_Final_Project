@@ -433,3 +433,10 @@ GPIO.cleanup()
 ```
 
 ![image](https://github.com/james7134/IOT_Final_Project/blob/main/page-turner/Hnet-image.gif?raw=true)
+
+## Set up your Raspberry Pi</br>
+* https://www.youtube.com/watch?v=xHDT4CwjUQE&ab_channel=ExplainingComputers</br>
+* https://www.youtube.com/watch?v=wkZW9Hgrnao&ab_channel=ExplainingComputers</br>
+* https://www.youtube.com/watch?v=2bganVdLg5Q&ab_channel=MakerTutor</br>
+* https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode</br>
+* https://developer.mozilla.org/en-US/docs/Web/API/Streams_API<br>
